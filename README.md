@@ -28,7 +28,7 @@ $ npm pack
 * When you finish generating the package, run this command: 
 
 ```
-sudo npm install -g react-scaffolder-0.3.3.tgz
+$ sudo npm install -g react-scaffolder-0.3.3.tgz
 ```
 
 ## How to use
@@ -39,9 +39,10 @@ Quickest way to get up and running with react-scaffolder
 - Install dependencies - ```$ npm install```
 - Run the build - ```$ npm run build && npm start```
 - Instantly create React components - ```$ react g component feed footer``` 
-* If you want to create a component in a specific folder add your PATH file in the command. 
-* Example: ``` react g component src/components footer```
 - Check with interactive view - ```$ react v -c``` 
+
+#### If you want to create a component in a specific folder add your PATH file in the command. 
+Example: ``` react g component src/components footer```
 
 ## Usage
 
