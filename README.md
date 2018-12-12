@@ -7,13 +7,14 @@ This is a forked project by [99xt](https://github.com/99xt) and the original pro
 I updated the dependency to new React version and I made some changes.  
 
 ## About the plugin
-react-scaffolder is a command line interface which brings smooth developer experience (DX) for React devs. react-scaffolder provides a better way to generate react projects with [react-boilerplate](https://github.com/99xt/react-boilerplate). With this tool it's possible to continue generating boilerplate code with heavy customizations once a project is initiated. 
+react-scaffolder is a command line interface which brings smooth developer experience (DX) for React devs.
 
 ## What's new 
 * You don't need to use the `.reactclirc` to generate a new component in an existing project; 
 * Use package.json to run the project; 
 * React updated to 16 version; 
 * Component generate (parent or child) updated to the new React version; 
+* The `.react` extension removed.
 
 ## Quick start 
 For install the dependency, please follow this steps: 
@@ -32,9 +33,6 @@ $ sudo npm install -g react-scaffolder-0.3.3.tgz
 ```
 
 ## How to use
-
-Quickest way to get up and running with react-scaffolder
-
 - Initiate a project - ```$ react init awesome-project && cd awesome-project```
 - Install dependencies - ```$ npm install```
 - Run the build - ```$ npm run build && npm start```
@@ -42,7 +40,7 @@ Quickest way to get up and running with react-scaffolder
 - Check with interactive view - ```$ react v -c``` 
 
 #### If you want to create a component in a specific folder add your PATH file in the command. 
-Example: ``` react g component src/components footer```
+Example: ```react g component src/components/footer footer```
 
 ## Usage
 
