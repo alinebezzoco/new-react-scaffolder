@@ -1,38 +1,46 @@
-![logo](https://user-images.githubusercontent.com/7692626/29966125-1d9e5ba6-8f2e-11e7-9155-c6cdc3c61be2.png)
+# new-react-scaffolder 
 
+Scaffolding tool for [React](https://facebook.github.io/react/). 
+Updated to 16 React version.
 
+This is a forked project by [99xt](https://github.com/99xt) and the original project is [here](https://github.com/99xt/react-scaffolder). 
+I updated the dependency to new React version and I made some changes.  
 
-# react-scaffolder ![Dependency status](https://david-dm.org/99xt/react-cli.svg) [![Build Status](https://travis-ci.org/99xt/react-scaffolder.svg?branch=master)](https://travis-ci.org/99xt/react-scaffolder)
+## About the plugin
+react-scaffolder is a command line interface which brings smooth developer experience (DX) for React devs.
 
-[![Join the chat at https://gitter.im/react-scaffolder/Lobby](https://badges.gitter.im/react-scaffolder/Lobby.svg)](https://gitter.im/react-scaffolder/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+## What's new 
+* You don't need to use the `.reactclirc` to generate a new component in an existing project; 
+* Use package.json to run the project; 
+* React updated to 16 version; 
+* Component generate (parent or child) updated to the new React version; 
+* The `.react` extension removed.
 
-Scaffolding tool for [React](https://facebook.github.io/react/)
+## Quick start 
+For install the dependency, please follow this steps: 
 
-react-scaffolder is a command line interface which brings smooth developer experience (DX) for React devs. react-scaffolder provides a better way to generate react projects with [react-boilerplate](https://github.com/99xt/react-boilerplate). With this tool it's possible to continue generating boilerplate code with heavy customizations once a project is initiated.
-
-## Install
+* Clone this project; 
+* Open project folder `cd new-react-scaffolder` and run this command: 
 
 ```
-$ npm install -g react-scaffolder
+$ npm pack
 ```
 
-or if you're using [yarn](https://yarnpkg.com),
+* When you finish generating the package, run this command: 
 
 ```
-$ yarn global add react-scaffolder
+$ sudo npm install -g react-scaffolder-0.3.3.tgz
 ```
 
-## Quick Start
-
-Quickest way to get up and running with react-scaffolder
-
-- Install the CLI - ```$ npm install -g react-scaffolder```
-
+## How to use
 - Initiate a project - ```$ react init awesome-project && cd awesome-project```
 - Install dependencies - ```$ npm install```
 - Run the build - ```$ npm run build && npm start```
-- Instantly create React components - ```$ react g component feed footer```
-- Check with interactive view - ```$ react v -c```
+- Instantly create React components - ```$ react g component feed footer``` 
+- Check with interactive view - ```$ react v -c``` 
+
+#### If you want to create a component in a specific folder add your PATH file in the command. 
+Example: ```react g component src/components/footer footer```
 
 ## Usage
 
@@ -74,7 +82,7 @@ Create React component.
 
 #### module
 
-Module name where the test file should be placed within. (Subdirectory within __tests__ directory)
+Module name where the test file should be placed within. (Subdirectory within tests directory)
 
 #### component
 
@@ -95,36 +103,6 @@ View React components file directory.
 * `-t`
 View tests file directory.
 
-### react config [key] [value]
-*alias: c*
-
-Change configuration in `.reactclirc`.
-
-#### key
-
-Key for configuration
-example: `client`
-
-#### value
-
-Value for configuration
-example: `src` (source directory)
-
----------------------------------------
-
-## Configuring existing projects
-
-To use react-cli in existing React project navigate to directory where React components are created.
-Create react-cli configuration file, `.reactclirc` (similar to `.babelrc`). Add configuration in key value pairs.
-
-```
-{
-	"client": "src"
-}
-```
-
-This specifies that React components are placed in `src/components` directory.
-
 ---------------------------------------
 
 ## Features
@@ -134,8 +112,6 @@ This specifies that React components are placed in `src/components` directory.
 - Create test files
 - Interactive view of the component structure
 
-#### [Future work](https://github.com/99xt/react-scaffolder/issues/23)
-
 ## References
 
 - [What is scaffolding ?](https://en.wikipedia.org/wiki/Scaffold_(programming))
@@ -143,16 +119,6 @@ This specifies that React components are placed in `src/components` directory.
 - [Why good UX in CLIs matters](https://trevorsullivan.net/2016/07/11/designing-command-line-tools/)
 - Projects which facilitate similar objectives
   - [Yeoman](http://yeoman.io/)
-
-## Contributor guidelines
-
-- Fork the repository.
-- Clone the forked repository.
-- Create your own branch.
-- Create tests and make sure tests pass on travis.
-- Create a pull request with changes made.
-
-For more information refer [CONTRIBUTING.md](https://github.com/99xt/react-cli/blob/master/CONTRIBUTING.md)
 
 ## License
 
