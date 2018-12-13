@@ -40,7 +40,7 @@ $ sudo npm install -g react-scaffolder-0.3.3.tgz
 - Check with interactive view - ```$ react v -c``` 
 
 #### If you want to create a component in a specific folder add your PATH file in the command. 
-Example: ```react g component src/components/footer footer```
+Example: ```react g component src/pages/footer/ footer```
 
 ## Usage
 
